@@ -1,3 +1,0 @@
-Example of adding .txt file using "Create file" in GitHub
-
-Edit after creating a new branch from main
