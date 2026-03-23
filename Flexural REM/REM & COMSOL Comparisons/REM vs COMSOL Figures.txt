@@ -1,0 +1,13 @@
+REM vs COMSOL Figures:
+
+Split Beam:
+The beam of length L has two sets of material properties. Each half of the beam has the same linear mass density, \mu, but different flexural rigidities (i.e., EI_1 \neq EI_2).
+
+The plot “REM vs COMSOL_SplitBeam.jpg” shows the mode shape results from the REM and COMSOL. The top row corresponds to a uniform beam (i.e., the material properties are constant for the full length of the beam), where each column corresponds to a given mode shape. The bottom row corresponds to the REM and COMSOL results of the split beam.
+
+Note that the mode shape amplitudes are normalized. One behavior of the REM is that when the mode shapes are normalized, they are all identical.
+
+Damaged Beam:
+This is modeled using the non-uniform spatial sampling method. For the REM, this is the same as used in Chapters 5 and 6 for the source models. At the known damage locations, however, the value of EI is set to EI = 0.75*EI_0.
+
+An analogous COMSOL model was made using the same parameters as that of the REM and the results in “REM vs COMSOL_DamagedBeam.jpg” correspond to these results. The top row corresponds to a beam sampled in this manner with each element having the same material properties (i.e., healthy, no damage) and the bottom row corresponding to the damaged case.
